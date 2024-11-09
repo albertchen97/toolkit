@@ -10,10 +10,10 @@ module.exports = {
     camelCase: "./src/camelCase.js",
   },
   output: {
-    filename: "[name].bundle.js",
+    filename: "[name].bundle.js", // [name] is a placeholder for the entries
     path: path.resolve(__dirname, "dist"),
   },
-  //   add some css loaders/preprocessors
+  // add some css loaders/preprocessors
   module: {
     // match files that end with ".sass" and use the loaders to preprocess them into the output file
     rules: [
@@ -32,7 +32,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: "my webpack app",
+      title: "Albert's Toolkit",
       filename: "index.html",
       template: "public/template.html",
     }),
@@ -41,8 +41,8 @@ module.exports = {
     static: {
       directory: path.join(__dirname, "public"),
     },
-    port: 3000,
-    open: true,
+    port: 3000, // server on port 3000
+    open: true, // open the web page after starting the dev server
     hot: true,
     compress: true,
   },
