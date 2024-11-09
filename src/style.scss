@@ -41,10 +41,10 @@ button {
   min-height: max-content;
 }
 @keyframes fade-out {
-  100% {
-    opacity: 0;
-  }
   0% {
     opacity: 100;
+  }
+  100% {
+    opacity: 0;
   }
 }

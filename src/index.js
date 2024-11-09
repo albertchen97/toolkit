@@ -1,7 +1,8 @@
-import { camelCase } from "lodash";
+import "./style.scss";
+
 const textArea = document.querySelector("textarea");
-const formatbutton = document.querySelector("#format-btn");
 const output = document.querySelector("#p-output");
+const copyBtn = document.querySelector("#copy-btn");
 
 const formatText = function (inputValue) {
   if (typeof inputValue === "string" && inputValue !== "") {
@@ -29,6 +30,8 @@ async function handleCopy() {
     copyInfo.style.animation = "fade-out 0.1s forwards";
   }, 1000);
 }
+
+copyBtn.addEventListener("click", handleCopy);
 
 // @return {function} a function that will run `cb` with given `...args` arguments after `delay` ms
 function debounce(cb, delay = 1000) {
@@ -71,15 +74,9 @@ const debounceUpdate = debounce(updateText);
 const throttleUpdate = throttle(updateText);
 
 textArea.addEventListener("input", (e) => {
-  textArea.style.height = `20px`;
+  textArea.style.height = `100px`;
   textArea.style.height = `${textArea.scrollHeight}px`;
   debounceUpdate(e.target.value);
   // throttleUpdate(e.target.value);
   // debounceUpdate(textArea.textContent);
-});
-
-const camelCaseInput = document.querySelector("section#camelCase > input");
-const camelCaseOutput = document.querySelector("#p-output-2");
-camelCaseInput.addEventListener("input", (e) => {
-  camelCaseOutput.textContent = camelCase(e.target.value);
 });

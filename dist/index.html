@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <link rel="stylesheet" type="text/css" href="styles.css">
-  </head>
+     <!-- <link rel="stylesheet" type="text/css" href="../src/style.css"> -->
+  <script defer src="index.bundle.js"></script><script defer src="camelCase.bundle.js"></script></head>
   <body>
     <section id="numbering-list-items">
       <h1>给文本添加数字编号的小工具</h1>
@@ -21,10 +21,8 @@
         <br />
         <p id="p-output"></p>
       </p>
-      <br />
-      <br />
 
-      <button onclick="handleCopy()">复制结果文本</button>
+      <button id="copy-btn">复制结果文本</button>
       <br /><br />
       <div id="copy-info"></div>
     </section>
@@ -37,11 +35,10 @@
         <br />
         <br />
         <p id="p-output-2"></p>
-
       </div>
-
     </section>
-    <script src="../dist/main.js"></script>
-     <!-- <script src="../src/index.js" defer></script> -->
+    <!-- <script src="../dist/index.js"></script> -->
+    <!-- <script src="../dist/camelCase.js"></script> -->
+     <script src="../src/index.js" defer></script>
   </body>
 </html>
