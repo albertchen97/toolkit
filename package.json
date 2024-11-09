@@ -1,0 +1,29 @@
+{
+  "name": "toolkit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/albertchen97/toolkit.git"
+  },
+  "keywords": [
+    "toolkit"
+  ],
+  "author": "Haoze Chen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/albertchen97/toolkit/issues"
+  },
+  "homepage": "https://github.com/albertchen97/toolkit#readme",
+  "devDependencies": {
+    "webpack": "^5.96.1",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}

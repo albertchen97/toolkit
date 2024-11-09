@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <section id="numbering-list-items">
+      <h1>给文本添加数字编号的小工具</h1>
+
+      <label for="text-input">输入文本：</label>
+      <br />
+      <br />
+      <textarea autofocus></textarea>
+      <br />
+      <br />
+      <div class="container output">
+        <label>结果文本：</label>
+        <br />
+        <br />
+        <p id="p-output"></p>
+      </p>
+      <br />
+      <br />
+
+      <button onclick="handleCopy()">复制结果文本</button>
+      <br /><br />
+      <div id="copy-info"></div>
+    </section>
+    <section id="camelCase">
+      <h1>Lodash 驼峰化工具</h1>
+      <label for="camelCaseInput">输入：</label>
+      <input type="text" name="camelCaseInput">
+      <div class="container output">
+        <label>结果文本：</label>
+        <br />
+        <br />
+        <p id="p-output-2"></p>
+
+      </div>
+
+    </section>
+    <script src="../dist/main.js"></script>
+     <!-- <script src="../src/index.js" defer></script> -->
+  </body>
+</html>
